@@ -21,7 +21,12 @@ Demo and playground are available [here](https://bonnv79.github.io/react-basic-l
 import React from 'react';
 import Component from 'react-basic-library';
 
-<Component />
+const Demo = () => {
+  const [value, setValue] = React.useState('');
+  return (
+    <Component value={value} onChange={setValue} />
+  );
+};
 ```
 
 ## Develop
